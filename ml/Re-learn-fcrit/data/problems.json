@@ -1,0 +1,102 @@
+[
+  {
+    "id": "sum_to_n",
+    "title": "Sum from 1 to N",
+    "statement": "Write a function sum_to_n(n) that takes a positive integer n and returns the sum of all integers from 1 to n inclusive.",
+    "canonical_solution": "def sum_to_n(n):\n    total = 0\n    for i in range(1, n + 1):\n        total += i\n    return total",
+    "tests": {
+      "inputs": [3, 5, 10, 1],
+      "expected": [6, 15, 55, 1]
+    }
+  },
+  {
+    "id": "average",
+    "title": "Calculate Average",
+    "statement": "Write a function average(nums) that takes a non-empty list of numbers nums and returns their float mean average.",
+    "canonical_solution": "def average(nums):\n    return sum(nums) / len(nums)",
+    "tests": {
+      "inputs": [[2, 4, 6], [1, 2], [5, 6], [3], [1, 2, 3, 4]],
+      "expected": [4.0, 1.5, 5.5, 3.0, 2.5]
+    }
+  },
+  {
+    "id": "count_evens",
+    "title": "Count Even Numbers",
+    "statement": "Write a function count_evens(nums) that returns the count of even integers in the list nums.",
+    "canonical_solution": "def count_evens(nums):\n    count = 0\n    for x in nums:\n        if x % 2 == 0:\n            count += 1\n    return count",
+    "tests": {
+      "inputs": [[1, 2, 4], [3, 5], [2, 2, 2], [6]],
+      "expected": [2, 0, 3, 1]
+    }
+  },
+  {
+    "id": "factorial",
+    "title": "Factorial of N",
+    "statement": "Write a function factorial(n) that returns n! for a positive integer n.",
+    "canonical_solution": "def factorial(n):\n    result = 1\n    for i in range(1, n + 1):\n        result *= i\n    return result",
+    "tests": {
+      "inputs": [1, 3, 5, 4],
+      "expected": [1, 6, 120, 24]
+    }
+  },
+  {
+    "id": "max_of_list",
+    "title": "Find Maximum in List",
+    "statement": "Write a function max_of_list(nums) that returns the maximum number in a non-empty list nums.",
+    "canonical_solution": "def max_of_list(nums):\n    highest = nums[0]\n    for val in nums[1:]:\n        if val > highest:\n            highest = val\n    return highest",
+    "tests": {
+      "inputs": [[3, 9, 2], [5], [-1, -5], [1, 2, 3]],
+      "expected": [9, 5, -1, 3]
+    }
+  },
+  {
+    "id": "add_item",
+    "title": "Add Item to List",
+    "statement": "Write a function add_item(lst, x) that appends x to list lst and returns the updated list.",
+    "canonical_solution": "def add_item(lst, x):\n    lst.append(x)\n    return lst",
+    "tests": {
+      "inputs": [[[1, 2], 3], [[], 5], [[4, 4], 0], [[7, 8, 9], 1]],
+      "expected": [[1, 2, 3], [5], [4, 4, 0], [7, 8, 9, 1]]
+    }
+  },
+  {
+    "id": "double_each",
+    "title": "Double Each Element",
+    "statement": "Write a function double_each(nums) that returns a new list with every element of nums doubled.",
+    "canonical_solution": "def double_each(nums):\n    res = []\n    for x in nums:\n        res.append(x * 2)\n    return res",
+    "tests": {
+      "inputs": [[1, 2, 3], [0], [5, -1], [4, 4]],
+      "expected": [[2, 4, 6], [0], [10, -2], [8, 8]]
+    }
+  },
+  {
+    "id": "read_and_add",
+    "title": "Read Inputs and Add",
+    "statement": "Write a function read_and_add(a, b) that converts two string inputs a and b to integers and returns their sum.",
+    "canonical_solution": "def read_and_add(a, b):\n    return int(a) + int(b)",
+    "tests": {
+      "inputs": [["3", "4"], ["10", "5"], ["0", "0"], ["12", "30"]],
+      "expected": [7, 15, 0, 42]
+    }
+  },
+  {
+    "id": "square",
+    "title": "Square of Number",
+    "statement": "Write a function square(x) that takes a number x and returns its square (x * x).",
+    "canonical_solution": "def square(x):\n    return x * x",
+    "tests": {
+      "inputs": [3, -2, 0, 5],
+      "expected": [9, 4, 0, 25]
+    }
+  },
+  {
+    "id": "range_sum",
+    "title": "Sum in Range [a, b]",
+    "statement": "Write a function range_sum(a, b) that returns the sum of integers from a to b inclusive (assume a <= b).",
+    "canonical_solution": "def range_sum(a, b):\n    total = 0\n    for i in range(a, b + 1):\n        total += i\n    return total",
+    "tests": {
+      "inputs": [[1, 4], [3, 3], [5, 7], [0, 2]],
+      "expected": [10, 3, 18, 3]
+    }
+  }
+]

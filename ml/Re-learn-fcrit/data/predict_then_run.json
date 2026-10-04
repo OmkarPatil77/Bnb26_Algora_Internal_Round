@@ -1,0 +1,35 @@
+{
+  "_comment": "draft, needs owner review",
+  "items": {
+    "M01": {
+      "label": "M01",
+      "snippet": "print(list(range(3)))",
+      "prompt": "What do you think list(range(3)) will print?"
+    },
+    "M02": {
+      "label": "M02",
+      "snippet": "print(list(range(2, 5)))",
+      "prompt": "What do you think list(range(2, 5)) will print?"
+    },
+    "M03": {
+      "label": "M03",
+      "snippet": "def greet(name):\n    print('Hello ' + name)\n\nval = greet('Alex')\nprint(val)",
+      "prompt": "What will be printed on the final line for `val`?"
+    },
+    "M04": {
+      "label": "M04",
+      "snippet": "a = [10, 20]\nb = a\nb.append(30)\nprint(a)",
+      "prompt": "What will print(a) output after appending to b?"
+    },
+    "M05": {
+      "label": "M05",
+      "snippet": "print(7 // 2)",
+      "prompt": "What is the result of integer floor division 7 // 2?"
+    },
+    "M06": {
+      "label": "M06",
+      "snippet": "for x in [1, 2, 3]:\n    total = 0\n    total += x\nprint(total)",
+      "prompt": "What will print(total) output after this loop finishes?"
+    }
+  }
+}

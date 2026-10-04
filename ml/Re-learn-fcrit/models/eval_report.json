@@ -1,0 +1,175 @@
+{
+  "headline": {
+    "test_accuracy": 0.8167,
+    "test_macro_f1": 0.6172,
+    "test_weighted_f1": 0.7761,
+    "classes": [
+      {
+        "id": "M01",
+        "name": "range(n) runs 1..n",
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571,
+        "support": 16
+      },
+      {
+        "id": "M02",
+        "name": "range(a, b) includes b",
+        "precision": 0.7778,
+        "recall": 0.875,
+        "f1": 0.8235,
+        "support": 16
+      },
+      {
+        "id": "M03",
+        "name": "print and return are the same",
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 32
+      },
+      {
+        "id": "M04",
+        "name": "b = a copies a list (aliasing)",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 16
+      },
+      {
+        "id": "M05",
+        "name": "/ vs // confusion",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      {
+        "id": "M06",
+        "name": "Accumulator initialised inside loop",
+        "precision": 0.4706,
+        "recall": 1.0,
+        "f1": 0.64,
+        "support": 16
+      },
+      {
+        "id": "NONE",
+        "name": "Correct Code",
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 24
+      }
+    ],
+    "confusion_matrix": {
+      "class_order": [
+        "M01",
+        "M02",
+        "M03",
+        "M04",
+        "M05",
+        "M06",
+        "NONE"
+      ],
+      "matrix": [
+        [
+          12,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          14,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          32,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          16,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          16,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          24
+        ]
+      ]
+    },
+    "unseen_misconception_detection": {
+      "target_class": "M07",
+      "unknown_threshold": 0.6,
+      "detection_rate": 0.8125,
+      "samples_tested": 16
+    },
+    "probe_uplift": {
+      "mode": "simulated",
+      "before_probe_accuracy": 0.925,
+      "after_probe_accuracy": 1.0,
+      "uplift_delta": 0.075,
+      "overlap_samples_evaluated": 80
+    }
+  },
+  "validation": {
+    "val_accuracy": 1.0,
+    "val_macro_f1": 1.0,
+    "val_weighted_f1": 1.0,
+    "samples_evaluated": 88
+  },
+  "split_leakage": {
+    "method": "variable_normalized_ast_exact_match",
+    "val_overlap_share": 0.1932,
+    "test_overlap_share": 0.0,
+    "val_overlap_count": 17,
+    "test_overlap_count": 0,
+    "description": "Share of val/test samples whose normalized AST appears in train.jsonl"
+  },
+  "splits": {
+    "train_samples": 269,
+    "val_samples": 88,
+    "test_samples": 136,
+    "overlap_set_samples": 80,
+    "total_samples": 493
+  }
+}
