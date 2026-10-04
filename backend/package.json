@@ -1,0 +1,32 @@
+{
+  "name": "re-learn-backend",
+  "version": "2.0.0",
+  "description": "Re:Learn Backend API Service (Node.js, Express, MongoDB, TypeScript)",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsx watch src/server.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "smoke": "tsx src/smoke.ts"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.2",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^20.17.10",
+    "@types/supertest": "^6.0.2",
+    "mongodb-memory-server": "^10.1.2",
+    "supertest": "^7.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
