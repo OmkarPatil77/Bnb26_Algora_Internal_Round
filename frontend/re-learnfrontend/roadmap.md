@@ -1,0 +1,4 @@
+- [ ] Build Re:Learn's warm theme, shared navigation, and mock session state.
+- [ ] Implement the question → diagnosis → probe → intervention → reassessment flow.
+- [ ] Implement learner dashboard and evaluation screens.
+- [ ] Verify route rendering, demo flow, accessibility basics, and current build status.
